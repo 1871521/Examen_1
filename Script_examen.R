@@ -32,8 +32,8 @@ mean(Historico$Superficie)
 # Representación gráfica --------------------------------------------------
  
  par(mfrow=c(1,2))
- hist(Historico$Numero.de.incendios, main = "Número de incendios", xlab = "Numero de incendios", ylab = "Superficie", col = "pink")
- hist(Historico$Superficie,main = "Hectareas quemadas", xlab = "Superficie", ylab = "Frecuencia", col = "orange") 
+ boxplot(Historico$Numero.de.incendios, main = "Número de incendios",  ylab = "Numero de incendios", col = "pink")
+ boxplot(Historico$Superficie,main = "Hectareas quemadas", ylab = "Superficie", col = "orange") 
  par(mfrow=c(1,1))
 
 boxplot(Historico$Numero.de.incendios, col = "red") 
